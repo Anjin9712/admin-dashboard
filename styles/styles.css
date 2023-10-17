@@ -68,7 +68,7 @@ span {
     padding-bottom: 1rem;
     justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 0 6rem;
 }
 
 /*header top */
@@ -84,24 +84,25 @@ form {
     align-items: center;
     justify-content: center;
     width: 60%;
-    padding: 0 4rem;
+    padding: 0;
 }
 
 .header-top button {
     width: 1.5rem;
     min-width: 1.5rem;
-    margin: 0 1rem;
+    margin: 1rem;
     padding: 0;
     border: none;
     background-color: inherit;
 }
 
 .header-top input {
-    width: 70%;
+    width: 80%;
     min-width: 15rem;
     height: 1.5rem;
     border-radius: 50px;
-    border: solid 1px gray;
+    border: none;
+    background-color: rgb(202, 202, 202);
     padding: 0.8rem 0.8rem;
     margin: auto 0;
 }
@@ -143,7 +144,7 @@ img[alt="notification-bell"] {
 .header-bottom .left {
     justify-content: left;
     width: 50%;
-    margin-left: 3rem;
+    margin-left: 0;
 }
 
 .header-bottom > .left > img{
@@ -166,14 +167,15 @@ img[alt="notification-bell"] {
 }
 
 .header-bottom button {
-    height: 2rem;
+    height: 2.5rem;
     width: 6rem;
+    min-width: 5rem;
     border-radius: 50px;
     border: solid 1px gray;
     background-color: rgb(57, 121, 146);
     color: antiquewhite;
     font-size: 1rem;
-    margin: auto 0.5rem;
+    margin: auto 1rem;
 }
 
 /*main content */
