@@ -43,20 +43,32 @@ body {
     position: fixed;
     width: 20%;
     height: 100%;
+    padding-left: 2rem;
 }
 
-.sidebar > h2 {
+.sidebar h2 {
     margin: 3rem auto 1.5rem 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
 }
 
-p {
+.sidebar img {
+    width: 30px;
+    margin: auto 1rem;
+}
+
+.dashboard-img {
+    width: 50px !important;
+    margin: 0 0.5rem 0 0 !important;
+}
+
+.options1 p, .options2 p {
     margin: 1.5rem;
     font-weight: 600;
-}
-
-span {
-    margin: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
 }
 
 /* header */
@@ -148,7 +160,7 @@ img[alt="notification-bell"] {
 }
 
 .header-bottom > .left > img{
-    margin: auto 0;
+    margin: auto 1rem;
     width: 8%;
     min-width: 60px;
     height: 8%;
@@ -162,12 +174,16 @@ img[alt="notification-bell"] {
     font-style: italic;
 }
 
+.header-bottom p {
+    font-weight: 600;
+}
+
 .header-bottom .right {
     justify-content: center;
 }
 
 .header-bottom button {
-    height: 2.5rem;
+    height: 2.3rem;
     width: 6rem;
     min-width: 5rem;
     border-radius: 50px;
@@ -189,6 +205,23 @@ img[alt="notification-bell"] {
     grid-template-columns: 5fr 2fr;
 }
 
+.main-content h3 {
+    font-size: 1rem;
+    margin: 1.5rem 0 0 1.5rem;
+}
+
+.main-content p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 1.5rem;
+    color: gray;
+}
+
+.main-content h2 {
+    font-size: 1.3rem;
+}
+
 /*projects*/
 
 .projects {
@@ -203,6 +236,8 @@ img[alt="notification-bell"] {
 .projects h2 {
     grid-column: 1/-1;
     margin: 2rem 0 0 2rem;
+    display: flex;
+    align-items: flex-end;
 }
 
 .projects > article {
@@ -212,7 +247,8 @@ img[alt="notification-bell"] {
     width: 90%;
     border-radius: 10px;
     padding: 0.5rem;
-    border-left: solid 8px orange;;
+    border-left: solid 8px orange;
+
 }
 
 .projects > article:nth-last-of-type(-n + 2) {
@@ -221,17 +257,6 @@ img[alt="notification-bell"] {
 
 .projects > article:nth-of-type(even) {
     margin-left: 0;
-}
-
-.projects > article > h3 {
-    font-size: 1.2rem;
-    margin: 1.5rem 0 0 1.5rem;
-}
-
-.projects p {
-    font-size: 1rem;
-    font-weight: 100;
-    margin-top: 10px;
 }
 
 /* aside */
@@ -260,7 +285,6 @@ img[alt="notification-bell"] {
     margin: 0.3rem;
     border-radius: 5px;
     padding: 1rem;
-    font-size: 1rem;
 }
 
 .trending {
@@ -269,8 +293,6 @@ img[alt="notification-bell"] {
 
 .announcements h3, .trending h3{
     margin: auto 0 0.5rem 1.5rem;
-    font-size: 1.3rem;
-    font-weight: 600;
 }
 
 .announcements p, .trending p {
