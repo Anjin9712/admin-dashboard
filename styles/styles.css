@@ -7,7 +7,6 @@ html {
     height: 100%;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
 }
 body {
     width: 100%;
@@ -67,6 +66,9 @@ span {
     background-color: whitesmoke;
     flex-direction: column;
     padding-bottom: 1rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 /*header top */
@@ -86,7 +88,8 @@ form {
 }
 
 .header-top button {
-    width: 2rem;
+    width: 1.5rem;
+    min-width: 1.5rem;
     margin: 0 1rem;
     padding: 0;
     border: none;
@@ -95,61 +98,82 @@ form {
 
 .header-top input {
     width: 70%;
-    height: 1.8rem;
+    min-width: 15rem;
+    height: 1.5rem;
     border-radius: 50px;
     border: solid 1px gray;
+    padding: 0.8rem 0.8rem;
+    margin: auto 0;
 }
 
 .right {
     width: 40%;
     display: flex;
     align-items: center;
-    text-align: right;
-    margin: auto 2rem;
+    justify-content: center;
+    margin: auto;
 }
 
 img[alt="notification-bell"] {
-    width: 2rem;
-    margin: auto 2rem auto 4rem;
+    width: 1.5rem;
+    margin: auto 2rem;
 }
 
 .right > img[alt="profile-pic"] {
-    width: 60px;
+    margin: auto 0;
+    width: 5%;
+    min-width: 40px;
+    height: 5%;
+    min-height: 40px;
     border-radius: 50%;
+}
+
+.right > p {
+    margin: auto 0.5rem;
 }
 
 /* header bottom */
 
 .header-bottom {
+    align-items: center;
     justify-content: space-between;
     padding: 0 4rem;
 }
 
 .header-bottom .left {
-    padding-left: 2rem;
+    justify-content: left;
+    width: 50%;
+    margin-left: 3rem;
 }
 
 .header-bottom > .left > img{
-    width: 80px;
+    margin: auto 0;
+    width: 8%;
+    min-width: 60px;
+    height: 8%;
+    min-height: 60px;
     border-radius: 50%;
 }
 
 .header-bottom span{
     margin: 0;
+    font-weight: 100;
+    font-style: italic;
 }
 
 .header-bottom .right {
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .header-bottom button {
-    height: 2.5rem;
-    width: 8rem;
+    height: 2rem;
+    width: 6rem;
     border-radius: 50px;
     border: solid 1px gray;
     background-color: rgb(57, 121, 146);
     color: antiquewhite;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin: auto 0.5rem;
 }
 
 /*main content */
@@ -180,32 +204,39 @@ img[alt="notification-bell"] {
 }
 
 .projects > article {
-    margin: 2rem 2rem 0 2rem;
+    margin: auto;
     background-color: whitesmoke;
     height: 12rem;
-    width: auto;
+    width: 90%;
     border-radius: 10px;
-    padding: 1rem;
-    border-left: solid 8px orange;
+    padding: 0.5rem;
+    border-left: solid 8px orange;;
 }
 
-.projects > article:nth-of-type(-n + 2) {
-    margin-top: 0;
-}
-
-.projects > article:nth-last-child(-n + 2) {
+.projects > article:nth-last-of-type(-n + 2) {
     margin-bottom: 2rem;
 }
 
+.projects > article:nth-of-type(even) {
+    margin-left: 0;
+}
+
 .projects > article > h3 {
-    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0 1.5rem;
+}
+
+.projects p {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 10px;
 }
 
 /* aside */
 
 .aside::before {
     content: "";
-    height: 1rem;
+    height: 2rem;
 }
 
 .aside {
@@ -215,18 +246,23 @@ img[alt="notification-bell"] {
 }
 
 .aside h2{
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-/*announcements*/
+/*announcements & trending*/
 
 .announcements, .trending{
     background-color: whitesmoke;
     width: 90%;
-    margin: 0 auto;
+    margin: 0.3rem;
     border-radius: 5px;
-    padding: 0.8rem;
+    padding: 1rem;
     font-size: 1rem;
+}
+
+.trending {
+    margin-bottom: 2rem;
 }
 
 .announcements h3, .trending h3{
@@ -239,6 +275,3 @@ img[alt="notification-bell"] {
     margin: 0.5rem 0.8rem 0.5rem 1.5rem;
     font-weight: 100;
 }
-
-/*trending*/
-
